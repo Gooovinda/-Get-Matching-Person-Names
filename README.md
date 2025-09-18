@@ -1,30 +1,32 @@
-** Task 1: Name Matching System **
+Task 1: Name Matching System
 
 🔹 Project Overview
-This project is a Name Matching System that helps find the closest matches for a given name from a dataset. For example, if someone types Geeta, the system suggests similar names like Geetha, Gita, Gitu, etc.
+This project is a Name Matching System that finds the closest matches for a given input name from a dataset. For example, if a user types Geeta, the system suggests similar names like Geetha, Gita, Gitu, etc.
 
-It uses string similarity matching to return both the best match and a ranked list of alternatives with scores.
+It leverages string similarity algorithms to return both the best match and a ranked list of alternatives with scores.
 
-🔹 Why It’s Useful
+🔹 Objective
+To design a tool that helps in data cleaning and search optimization by matching names with different spellings or variations. Useful for HR systems, CRMs, and large databases where accurate record matching is essential.
 
-Helps in data cleaning when dealing with messy datasets (different spellings of the same name).
+🔹 Key Highlights
 
-Can be applied in HR systems, customer databases, or search engines to ensure accurate matching.
+🔍 Similarity Matching: Finds the closest match for a given name.
 
-🔹 Key Features
+📑 Ranked Results: Returns the best match along with a list of alternatives and their similarity scores.
 
-Stores a list of 30+ similar names.
+✅ Practical Application: Helps resolve spelling variations, duplicate entries, and fuzzy search queries.
 
-Accepts user input and finds the closest match.
-
-Returns both:
-
-✅ Best Match (highest similarity)
-
-📌 Ranked list of other possible matches
-
-🔹 Tech Used
+🔹 Tech Stack
 
 Python
 
-FuzzyWuzzy (string similarity library)
+FuzzyWuzzy (string similarity)
+
+🔹 Example Output
+Input: Geeta
+
+Best Match: Geetha (Score: 96)  
+Other Possible Matches:  
+- Gita (Score: 92)  
+- Gitu (Score: 85)  
+- Geeti (Score: 80)  
